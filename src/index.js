@@ -42,6 +42,9 @@ app.get('/yo', (req, res) => {
     res.json(data);
   });
   
+// Enable static files
+app.use(express.static("./static"));
+
 
 // Start the Express.js server on port 3000
 const port = 3000;
